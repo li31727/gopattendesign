@@ -1,17 +1,17 @@
 package model
 
-import "DEMO/pattendesign/gopattendesign/ObserverModen/interface"
+import "DEMO/pattendesign/gopatterndesign/ObserverPattern/Interface"
 
 type WeatherData struct {
-	Observers	[]_interface.Observer
+	Observers	[]Interface.Observer
 	Temperature float32
 	Humidity	float32
 	Pressure	float32
 }
-func (weatherData *WeatherData) RegisterObserver(observer _interface.Observer){
+func (weatherData *WeatherData) RegisterObserver(observer Interface.Observer){
 	weatherData.Observers=append(weatherData.Observers, observer)
 }
-func(weatherData *WeatherData) RemoveObserver(observer _interface.Observer){
+func(weatherData *WeatherData) RemoveObserver(observer Interface.Observer){
 	for index,obj:=range weatherData.Observers{
 		if obj==observer{
 			if index== (len(weatherData.Observers)-1){

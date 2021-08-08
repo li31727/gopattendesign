@@ -1,7 +1,7 @@
 package model
 
 import (
-	"DEMO/pattendesign/gopattendesign/ObserverModen/interface"
+	"DEMO/pattendesign/gopatterndesign/ObserverPattern/Interface"
 	"fmt"
 )
 
@@ -9,7 +9,7 @@ type ForecastConditionsDisplay struct {
 	Temperature float32
 	Humidity    float32
 	Pressure    float32
-	Subject     _interface.Subject
+	Subject     Interface.Subject
 }
 
 func (currentConditionsDisplay *ForecastConditionsDisplay) Update(temperature,humidity,pressure float32){

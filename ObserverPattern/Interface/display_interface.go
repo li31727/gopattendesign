@@ -1,4 +1,4 @@
-package _interface
+package Interface
 
 
 type DisplayElement interface {

@@ -1,6 +1,6 @@
 package main
 
-import "DEMO/pattendesign/gopattendesign/ObserverModen/model"
+import "DEMO/pattendesign/gopatterndesign/ObserverPattern/model"
 
 func main() {
 	weatherdata:=new(model.WeatherData)

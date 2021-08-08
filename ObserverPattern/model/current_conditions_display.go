@@ -1,14 +1,14 @@
 package model
 
 import (
-	"DEMO/pattendesign/gopattendesign/ObserverModen/interface"
+	"DEMO/pattendesign/gopatterndesign/ObserverPattern/Interface"
 	"fmt"
 )
 
 type CurrentConditionsDisplay struct {
 	Temperature float32
 	Humidity    float32
-	Subject     _interface.Subject //加这个的好处是以后可以主动拉取实现subject接口对象的数据
+	Subject     Interface.Subject //加这个的好处是以后可以主动拉取实现subject接口对象的数据
 }
 
 func (currentConditionsDisplay *CurrentConditionsDisplay) Update(temperature,humidity,pressure float32){
