@@ -1,7 +1,7 @@
 package main
 
 import (
-	"DEMO/pattendesign/gopattendesign/StrategyMode/model"
+	"DEMO/pattendesign/gopatterndesign/StrategyPattern/model"
 	"fmt"
 )
 
